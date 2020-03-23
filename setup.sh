@@ -26,8 +26,11 @@ install_pkg git
 install_pkg tree
 install_pkg fzf
 install_pkg man
+install_pkg golang
+install_pkg golang-doc
 
 create_symlink '.bash_profile' 'termux-dotfiles/bash_profile'
-create_symlink 'bin' 'termux-dotfiles/bin'
+# note as this is directory just use a . as target in home dir
+create_symlink '.' 'termux-dotfiles/bin'
 
 # vim: set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab :
